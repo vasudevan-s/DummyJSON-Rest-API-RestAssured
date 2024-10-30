@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!-- Created By: Vasudevan Sampath -->
+
+<suite name="Dummy JSON REST API Automation Suite" parallel="false" thread-count="1" verbose="1" >
+    <parameter name="APIBaseURL" value="https://dummyjson.com"/>
+    <parameter name="username" value=""/>
+    <parameter name="password" value=""/>
+
+    <test name="RestAPISuite" enabled="true">
+        <classes>
+            <class name="pro.vasudevan.restapi.automation.dummyjson.tests.carts.APITests"/>
+        </classes>
+    </test>
+</suite>
